@@ -1,0 +1,438 @@
+/********** color key **********/
+
+/* *************************** */
+
+body {
+    color: rgb(51, 51, 51);
+    font-family: 'Raleway', sans-serif;
+    background: url(../img/vintage_speckles.png)
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+h3.sub {
+    border-bottom: 2px dotted #d64933;
+    display: inline-block;
+    font-size: 75px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+h1.sub {
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+}
+.container p.sub {
+    padding: 0;
+    padding-bottom: 5px;
+}
+
+/* ***************************************************** **/
+
+/************************* navbar *************************/
+
+/* ***************************************************** **/
+
+a.navbar-brand {
+    color: #ddd;
+    font-weight: 900;
+    font-family: 'Playfair Display', serif;
+}
+
+a.navbar-brand span {
+    color: transparent;
+    transition: color 1s ease-in 0s;
+}
+
+.navbar {
+    background-color: transparent;
+    transition: background-color 1s ease-in 0s;
+    margin-bottom: 0;
+    border: none;
+    border-radius: 0;
+    border: 1px solid transparent;
+}
+
+.navbar-nav>li>a.gray-text, a.navbar-brand.gray-text {
+    color: rgb(51, 51, 51);
+    transition: color 2s ease-in 0s;
+}
+
+a.navbar-brand.gray-text>span {
+    color: #d64933;
+    transition: color 2s ease-in 0s;
+}
+
+.navbar.solid {
+    background-color: white;
+    transition: background-color 2s ease-in 0s, border 2s ease-in 0s, box-shadow 2s ease-in 0s, border 2s ease-in 0s;
+    box-shadow: 3px 0 12px #999;
+}
+
+.navbar-nav>li>a {
+    color: #ddd;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar-nav>li>a:hover {
+    color: #d64933;
+    -moz-transition: none;
+    -webkit-transition: none;
+    -o-transition: color 0 ease-in;
+    transition: none;
+}
+
+.navbar-nav>li>a:hover, .navbar-nav>li>a:focus {
+    background-color: transparent;
+}
+
+#main-menu>.container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar .navbar-toggle .icon-bar {
+    background-color: #f2f2f2;
+    transition: background-color 2s ease-in 0s;
+}
+
+.navbar.solid .navbar-toggle .icon-bar {
+    transition: background-color 2s ease-in 0s;
+    background-color: rgb(51, 51, 51);
+}
+
+.navbar-nav li>a.active {
+    background-color: transparent;
+    text-decoration: underline;
+    text-decoration-color: #d64933;
+    text-decoration-style: dotted;
+    -moz-transition: none;
+    -webkit-transition: none;
+    -o-transition: color 0 ease-in;
+    transition: none;
+}
+
+.container p, .container-fluid p {
+    padding: 5px 15px;
+    line-height: 2;
+}
+
+#fp-nav {
+    top: 10%;
+}
+
+/* change arrow icons */
+
+.fp-controlArrow.fp-prev {
+    left: 20px;
+    border: none;
+    width: 50px;
+    height: 101px;
+    background: url(../img/left.png) no-repeat center;
+    cursor: pointer;
+}
+
+.fp-controlArrow.fp-next {
+    right: 20px;
+    border: none;
+    width: 50px;
+    height: 101px;
+    background: url(../img/right.png) no-repeat center;
+    cursor: pointer;
+}
+
+/*  *******************
+
+ home 
+
+******************* */
+
+#home {
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, .5)), url(../img/jumbo.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(51, 51, 51, .9);
+}
+
+.cursor {
+    font-size: 45px;
+    font-family: monospace;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.cursor:after {
+    content: "_";
+    opacity: 0;
+    animation: cursor 1s infinite;
+    color: #d64933;
+    font-weight: 600;
+}
+
+@keyframes cursor {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.bottom-home {
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.bottom-home p {
+    font-size: 90%;
+    font-weight: bold;
+}
+
+.bottom-home a {
+    color: #fff;
+}
+
+.bottom-home a:hover {
+    color: #58a4b0;
+    /* color: #ddd; */
+}
+
+/*  *******************
+
+ about 
+
+******************* */
+
+#about {
+    background-size: cover;
+}
+
+/*  *******************
+
+ contact 
+
+******************* */
+
+/* input[type], textarea.form-control {
+    background-color: #ddd;
+} */
+
+#contact {
+    background-color: rgb(51, 51, 51);
+}
+
+@media screen and (min-width: 992px) {
+    .contact-info {
+        border-left: 2px dotted #ddd;
+    }
+    .contact-map {
+        min-height: 435px;
+        background: url('https://maps.googleapis.com/maps/api/staticmap?center=san+fernando,+ca&zoom=12&scale=1&size=600x500&maptype=roadmap&format=png&visual_refresh=true') no-repeat center center;
+        margin: 15px;
+        border: 2px solid #fff;
+    }
+}
+
+.btn-sub {
+    border: 1px solid rgb(51, 51, 51);
+    color: rgb(51, 51, 51);
+    background-color: #ddd;
+    padding: 10px 20px;
+    border-radius: 0;
+}
+
+.btn-sub:hover {
+    border: 1px solid #ddd;
+    background-color: rgb(51, 51, 51);
+    color: #ddd;
+}
+
+.form-control:focus {
+    border: 1px solid #58a4b0;
+}
+
+.form-group {
+    padding-bottom: 15px;
+}
+
+.form-group label {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#contact .container {
+    color: #ddd;
+}
+
+.contact-info h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: left;
+    line-height: 57px;
+}
+
+.contact-info p {
+    font-size: 14px;
+    line-height: 57px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+#footer .social a {
+    margin: 29px 10px;
+    display: inline-block;
+    color: rgb(51, 51, 51);
+}
+
+#footer a {
+    color: #2b303a;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: #d64933;
+}
+
+#footer li {
+    display: inline-block;
+    padding: 25px;
+}
+
+li.first-link {
+    padding-left: 0;
+}
+
+li.last-link {
+    padding-right: 0;
+}
+
+#footer .links {
+    padding-left: 0;
+}
+
+.social a:hover .fa-twitter {
+    color: #00abf0;
+}
+
+.social a:hover .fa-facebook {
+    color: #39579a;
+}
+
+.social a:hover .fa-instagram {
+    color: #dd2a7b;
+}
+
+.social a:hover .fa-github {
+    color: #feda77;
+}
+
+.social a:hover .fa-linkedin-square {
+    color: #0077b5;
+}
+
+.social a:hover .fa-vimeo {
+    color: #1ab7ea;
+}
+
+.social a:hover .fa-tumblr-square {
+    color: #35465c;
+}
+
+.social a:hover .fa-pinterest {
+    color: #bd081c;
+}
+
+.social a:hover .fa-youtube-play {
+    color: #ff0000;
+}
+
+/* *********************
+projects
+********************* */
+
+#projects {
+    background-size: cover;
+}
+
+/* *********************
+gallery
+********************* */
+
+#gallery {
+    background-size: cover;
+}
+
+.col-text {
+    padding: 25px 10px;
+}
+
+.hide-mobile {
+    display: none;
+}
+
+@media screen and (min-width: 992px) {
+    .slide .col-text {
+        margin-left: 5px;
+    }
+    .display-mobile {
+        display: none;
+    }
+    .hide-mobile {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    body {
+        font-size: 90%;
+    }
+    .container>h3, .container-fluid h3 {
+        font-size: 40px;
+    }
+    .col-md-4 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #openbtn {
+        top: 0;
+        left: 0;
+        background-color: transparent;
+        /* background: linear-gradient(to bottom right, transparent, transparent); */
+    }
+    /* #slide2 {
+        background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2)), url(../img/4.jpg) no-repeat center center;
+        background-size: cover;
+    }
+    #slide4 {
+        background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2)), url(../img/1.jpg) no-repeat center center;
+        background-size: cover;
+    }
+    #slide3 {
+        background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2)), url(../img/3.jpg) no-repeat center center;
+        background-size: cover;
+    } */
+    .cursor {
+        font-size: 15px;
+    }
+}
