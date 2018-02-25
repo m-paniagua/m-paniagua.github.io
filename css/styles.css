@@ -258,6 +258,7 @@ a.navbar-brand.gray-text>span {
     background-color: #ddd;
     padding: 10px 20px;
     border-radius: 0;
+    font-weight: bold;
 }
 
 .btn-sub:hover {
