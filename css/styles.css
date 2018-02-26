@@ -216,6 +216,13 @@ a.navbar-brand.gray-text>span {
     /* color: #ddd; */
 }
 
+.up-key {
+	position: absolute;
+	bottom: 28px;
+	left: 197px;
+	height: 17px;
+}
+
 /*  *******************
 
  about 
@@ -387,6 +394,10 @@ gallery
 
 .col-text {
     padding: 25px 10px;
+}
+
+.col-pic img {
+    border: 2px solid #ddd;
 }
 
 .hide-mobile {
