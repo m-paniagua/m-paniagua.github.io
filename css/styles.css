@@ -67,7 +67,7 @@ a.navbar-brand.gray-text>span {
 }
 
 .navbar.solid {
-    background-color: white;
+    background-color: #eee;
     transition: background-color 2s ease-in 0s, border 2s ease-in 0s, box-shadow 2s ease-in 0s, border 2s ease-in 0s;
     box-shadow: 3px 0 12px #999;
 }
@@ -237,7 +237,8 @@ a.navbar-brand.gray-text>span {
 } */
 
 #contact {
-    background-color: rgb(51, 51, 51);
+    /* background-color: rgb(51, 51, 51); */
+    background: url('../img/inverted.png');
 }
 
 @media screen and (min-width: 992px) {
